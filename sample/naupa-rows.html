@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example NAUPA II rows (fictional data)</title>
+  <style>
+    body { margin:0; background:#f5f7f9; color:#182230; font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { max-width:860px; margin:0 auto; padding:24px 16px 48px; }
+    .label { padding:12px 14px; border-left:4px solid #b54708; background:#fff7ed; font-weight:700; }
+    h1 { font-size:1.6rem; line-height:1.2; }
+    h2 { font-size:1.05rem; margin:22px 0 6px; }
+    pre { background:#fff; border:1px solid #d7e0e7; border-radius:8px; padding:12px; overflow-x:auto; font-size:.8rem; }
+    p { margin:0 0 12px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="label">EXAMPLE ONLY. Fictional data. Sample Holder Co LLC and Sample Vendor LLC are made-up names, and FEIN 99-9999999 is a placeholder.</p>
+    <h1>Example NAUPA II rows for New York</h1>
+    <p>These are the matching report rows for the <a href="owner-letter.pdf">example owner letter</a>, produced by the generator from a one-row example CSV: one $450.00 vendor check (property code CK13). NAUPA II records are fixed-width, 625 characters each. Trailing spaces are trimmed here so the rows are readable.</p>
+<h2>HOLDER record (type 1)</h2>
+<pre>199999999900012026R01R0000NY00000000SAMPLE HOLDER CO LLC                                                                        NOT SUPPLIED                            NOT SUPPLIED                                                                              NOT SUPPLIED                                0000000000</pre>
+<h2>PROPERTY record (type 2), the one check</h2>
+<pre>2000001PCSAMPLE VENDOR LLC                                                                                         123 EXAMPLE ST                                                                            ALBANY                                            NY12207    USA000000000  000000002022041500000000CK130000045000  00000000000000045000  0000000000  00000000000000045000N0000000                                  000000000000000000000000000000000000000000000000                                  000000000000EXAMPLE-0001        EXAMPLE-0001        CK13 VENDOR_CHECK                                 PAOT</pre>
+<h2>SUMINFO record (type 9), the totals</h2>
+<pre>900000300000100000004500000000000000000000004500000000000000000000000000000000004500000000000000000000000000000000000000000000000000000000000 ESCHEAT-MVP-0.1     ESCHEAT MVP LOCAL   DRAFT ONLY DOES NOT FILE OR PAY THE STATE</pre>
+    <p>The file is a draft. The holder reviews it, signs it, and uploads it. We do not remit.</p>
+    <p><a href="../">Back to the New York offer</a></p>
+  </main>
+</body>
+</html>
